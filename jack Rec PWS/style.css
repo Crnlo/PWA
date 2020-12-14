@@ -1,0 +1,100 @@
+/* Custom Properties */
+:root {
+  --main-color: #80ff80;
+  --main-modal-color:  #80ff80;
+  --second-color: #2B2B2B;
+  --second-modal-color: white;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  
+  font-size: 35px;
+  line-height: 1.6;
+  color: var(--second-color);
+  background-color: var(--main-modal-color);
+}
+   html {
+     min-height: 100%;
+     position: relative;
+   }
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 2rem auto;
+  overflow-x: hidden;
+  max-width: 440px;
+  
+}
+h1:hover {
+  color: red;
+}
+
+
+  
+
+a {
+  font-weight: bold;
+  color: var(--second-color);
+  transition: all .3s ease-out;
+}
+
+a:hover {
+  color: var(--second-modal-color);
+}
+
+p {
+  padding: 12px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
+
+::selection {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Header h1 { word-wrap: break-word; }
+
+.Header img {
+  
+  margin: 0 auto;
+  padding-top: 5px;
+  display: block;
+  max-width: 180px;
+  
+}
+
+.Header nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 50px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
